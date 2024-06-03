@@ -58,6 +58,17 @@ public class ToDoList{
                         System.out.println("Índice inválido.");
                     }
                     break;
+
+                    case 5:
+                    exit = true;
+                    System.out.println("Saliendo de la aplicación.");
+                    break;
+                default:
+                    System.out.println("Opción inválida. Inténtelo de nuevo.");
+            }
+        }
+
+        scanner.close();
             }
 
         }
