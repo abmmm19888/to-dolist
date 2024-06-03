@@ -39,5 +39,12 @@ public class ToDoList{
                         System.out.println("Invalid index.");
                     }
                     break;
+
+                    case 3:
+                    System.out.println("\n--- Task List ---");
+                    for (int i = 0; i < tasks.size(); i++) {
+                        System.out.println(i + ". " + tasks.get(i));
+                    }
+                    break;  
             }
         }
