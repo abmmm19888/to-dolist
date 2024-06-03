@@ -48,23 +48,23 @@ public class ToDoList{
                     break;  
 
                     case 4:
-                    System.out.print("Ingrese el índice de la tarea a marcar como hecha: ");
+                    System.out.print("Enter the index of the task to be marked as done: ");
                     int doneIndex = scanner.nextInt();
                     if (doneIndex >= 0 && doneIndex < tasks.size()) {
                         String task = tasks.get(doneIndex);
-                        tasks.set(doneIndex, "[Hecho] " + task);
-                        System.out.println("Tarea marcada como hecha.");
+                        tasks.set(doneIndex, "[Done] " + task);
+                        System.out.println("Task marked as done.");
                     } else {
-                        System.out.println("Índice inválido.");
+                        System.out.println("Invalid index.");
                     }
                     break;
 
                     case 5:
                     exit = true;
-                    System.out.println("Saliendo de la aplicación.");
+                    System.out.println("Exiting the application.");
                     break;
                 default:
-                    System.out.println("Opción inválida. Inténtelo de nuevo.");
+                    System.out.println("Invalid option. Please try again.");
             }
         }
 
