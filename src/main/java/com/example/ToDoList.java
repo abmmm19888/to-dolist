@@ -46,5 +46,18 @@ public class ToDoList{
                         System.out.println(i + ". " + tasks.get(i));
                     }
                     break;  
+
+                    case 4:
+                    System.out.print("Ingrese el índice de la tarea a marcar como hecha: ");
+                    int doneIndex = scanner.nextInt();
+                    if (doneIndex >= 0 && doneIndex < tasks.size()) {
+                        String task = tasks.get(doneIndex);
+                        tasks.set(doneIndex, "[Hecho] " + task);
+                        System.out.println("Tarea marcada como hecha.");
+                    } else {
+                        System.out.println("Índice inválido.");
+                    }
+                    break;
             }
+
         }
