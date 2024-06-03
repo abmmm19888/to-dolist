@@ -21,5 +21,23 @@ public class ToDoList{
             System.out.print("Select an option: ");
             int option = scanner.nextInt();
             scanner.nextLine();
+
+            switch (option) {
+                case 1:
+                    System.out.print("Enter the task to be added: ");
+                    String newTask = scanner.nextLine();
+                    tasks.add(newTask);
+                    System.out.println("Task successfully added.");
+                    break;
+                case 2:
+                    System.out.print("Enter the index of the task to be deleted: ");
+                    int index = scanner.nextInt();
+                    if (index >= 0 && index < tasks.size()) {
+                        tasks.remove(index);
+                        System.out.println("Task successfully removed.");
+                    } else {
+                        System.out.println("Invalid index.");
+                    }
+                    break;
             }
         }
